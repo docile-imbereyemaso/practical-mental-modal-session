@@ -87,7 +87,7 @@ app.post("/items", async (req, res) => {
       name: name.trim(),
       description: description.trim(),
       price: Number(price),
-      date: new Date().toISOString(),
+      createdAt: new Date().toISOString(),
     };
     items.push(newItem);
     await writeData(items);

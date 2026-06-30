@@ -1,9 +1,10 @@
 [
   {
     "id": "3295a1a9-cc97-48bf-a0c7-13c27cfe5794",
-    "name": "Chaplin Imbereyemaso",
+    "name": "Docile Imbereyemaso",
     "description": "this is my first item",
     "price": 3000,
-    "date": "2026-06-30T10:33:38.317Z"
+    "date": "2026-06-30T10:33:38.317Z",
+    "updatedAt": "2026-06-30T10:42:52.642Z"
   }
 ]
