@@ -3,8 +3,8 @@ export interface Item {
   name: string;
   description: string;
   price: number;
-  createdAt: Date;
-  updatedAt?: Date;
+  createdAt: string;
+  updatedAt?: string;
 }
 export interface CreateItemInput {
   name: string;
