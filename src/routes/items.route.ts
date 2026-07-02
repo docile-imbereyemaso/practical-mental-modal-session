@@ -6,12 +6,16 @@ import {
   getItemById,
   updateItem,
 } from "../controllers/items.controller.js";
+import {
+  validateCreateSchema,
+  validateUpdateSchema,
+} from "../middlewares/validate.js";
 
 const router = Router();
 
-router.post("/", createItem);
 router.get("/", getAllItems);
 router.get("/:id", getItemById);
-router.put("/:id", updateItem);
+router.post("/", validateCreateSchema, createItem);
+router.put("/:id", validateUpdateSchema, updateItem);
 router.delete("/:id", deletedItem);
 export default router;

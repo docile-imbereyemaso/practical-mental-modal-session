@@ -11,14 +11,6 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 
 export const createItem = asyncHandler(async (req: Request, res: Response) => {
   const { name, description, price } = req.body;
-  if (!name || !description || price === undefined) {
-    throw new BadRequestException(
-      "All fields(name,description and price) are required.",
-    );
-  }
-  if (isNaN(Number(price))) {
-    throw new BadRequestException("Price must be valid number.");
-  }
   const item = await createItemService({ name, description, price });
   res.status(201).json({
     success: true,
@@ -36,9 +28,6 @@ export const getAllItems = asyncHandler(async (req: Request, res: Response) => {
 });
 export const updateItem = asyncHandler(async (req: Request, res: Response) => {
   const { name, description, price } = req.body;
-  if (price !== undefined && isNaN(Number(price))) {
-    throw new BadRequestException("Price must be a valid number.");
-  }
   const updatedItem = await updateItemService(req.params.id as string, {
     name,
     description,
