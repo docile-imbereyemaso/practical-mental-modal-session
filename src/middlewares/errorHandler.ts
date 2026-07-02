@@ -1,7 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
 import { AppError } from "../utils/appError.js";
 
-export const errorHandler = (
+const errorHandler = (
   err: Error | AppError,
   req: Request,
   res: Response,
@@ -14,3 +14,4 @@ export const errorHandler = (
     message,
   });
 };
+export default errorHandler;
