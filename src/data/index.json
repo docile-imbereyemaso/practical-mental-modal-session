@@ -1,0 +1,16 @@
+[
+  {
+    "id": "e7d15ae6-6172-4d8d-8a99-1d86f250b1f4",
+    "name": "Callixte Imbereyemaso",
+    "description": "this is my first item",
+    "price": 2000,
+    "createdAt": "2026-07-02T12:20:05.650Z"
+  },
+  {
+    "id": "c85de21d-b027-4eb8-a3a7-282da4318a4d",
+    "name": "Callixte Imbereyemaso",
+    "description": "this is my first item",
+    "price": 4000,
+    "createdAt": "2026-07-02T12:51:06.880Z"
+  }
+]
